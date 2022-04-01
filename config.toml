@@ -1,0 +1,11 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Nicholson Ochoa - Portafolio'
+theme = "hugo-book"
+
+# Book configuration
+disablePathToLower = true
+enableGitInfo = true
+
+[params]
+BookTheme = 'dark'
