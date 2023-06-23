@@ -34,3 +34,7 @@ H:
 
 ## <spam style="color:#1BBBF5">Adaptations</spam>
 <img src="images/adaptations.png"  style="height: 400px">
+
+H:
+
+# MERCI
