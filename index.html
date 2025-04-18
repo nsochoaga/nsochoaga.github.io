@@ -1,44 +1,150 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicholson Stive Ochoa Garcia - CV</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer>
+    function toggleLanguage() {
+      document.documentElement.lang = document.documentElement.lang === 'es' ? 'en' : 'es';
+      document.querySelectorAll('[data-es], [data-en]').forEach(el => {
+        el.textContent = document.documentElement.lang === 'es' ? el.dataset.es : el.dataset.en;
+      });
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f2f8ff;
+      color: #333;
+    }
+    .header {
+      background: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .header button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: white;
+      color: #4a90e2;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    section {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #4a90e2;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1 data-es="Nicholson Stive Ochoa Garcia" data-en="Nicholson Stive Ochoa Garcia">Nicholson Stive Ochoa Garcia</h1>
+    <p data-es="Desarrollador Fullstack & Backend" data-en="Fullstack & Backend Developer">Desarrollador Fullstack & Backend</p>
+    <button onclick="toggleLanguage()">🌐 Cambiar idioma / Change Language</button>
+  </header>
 
-		<title>reveal.js</title>
+  <main class="container">
+    <section class="profile">
+      <h2 data-es="Perfil Profesional" data-en="Professional Profile">Perfil Profesional</h2>
+      <p data-es="Ingeniero de sistemas con más de 3 años de experiencia en desarrollo backend y fullstack. Especializado en Django, React y APIs REST. Nivel de inglés B1/B2."
+         data-en="Systems engineer with 3+ years of experience in backend and fullstack development. Specialized in Django, React, and REST APIs. English level B1/B2.">
+         Ingeniero de sistemas con más de 3 años de experiencia en desarrollo backend y fullstack. Especializado en Django, React y APIs REST. Nivel de inglés B1/B2.
+      </p>
+    </section>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <section class="experience">
+      <h2 data-es="Experiencia" data-en="Experience">Experiencia</h2>
+      <div>
+        <h3>Athento</h3>
+        <p data-es="Ingeniero de Software - Nov 2022 a May 2024" data-en="Software Engineer - Nov 2022 to May 2024">Ingeniero de Software - Nov 2022 a May 2024</p>
+        <p data-es="Desarrollo de funcionalidades con Django y React. Mejora de APIs y trabajo ágil."
+           data-en="Feature development using Django and React. API improvements and agile teamwork.">
+           Desarrollo de funcionalidades con Django y React. Mejora de APIs y trabajo ágil.
+        </p>
+      </div>
+      <div>
+        <h3>Freelance</h3>
+        <p data-es="Desarrollador Fullstack - 2022 a Actualidad" data-en="Fullstack Developer - 2022 to Present">Desarrollador Fullstack - 2022 a Actualidad</p>
+        <p data-es="Desarrollo web con React, Next.js, Express y Spring Boot. Soporte técnico y formación básica."
+           data-en="Web development with React, Next.js, Express, and Spring Boot. Technical support and training.">
+           Desarrollo web con React, Next.js, Express y Spring Boot. Soporte técnico y formación básica.
+        </p>
+      </div>
+    </section>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section    data-markdown="source.md"  
-                                    data-separator="^H:"  
-                                    data-separator-vertical="V:"  
-                                    data-separator-notes="^N:"  
-                                    data-charset="utf-8">
-                </section>
-			</div>
-		</div>
+    <section class="education">
+      <h2 data-es="Educación" data-en="Education">Educación</h2>
+      <p data-es="Universidad Nacional de Colombia - Ingeniero de Sistemas (2016 - 2023)"
+         data-en="National University of Colombia - Systems Engineer (2016 - 2023)">
+         Universidad Nacional de Colombia - Ingeniero de Sistemas (2016 - 2023)
+      </p>
+    </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <section class="skills">
+      <h2 data-es="Tecnologías" data-en="Technologies">Tecnologías</h2>
+      <ul>
+        <li>Python, JavaScript, Java, C++</li>
+        <li>Django, React, Vue.js, Next.js, Express, Spring Boot</li>
+        <li>PostgreSQL, Git, GitHub</li>
+        <li>Scrum, soporte técnico, mesa de ayuda</li>
+      </ul>
+    </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+    <section class="certifications">
+      <h2 data-es="Certificaciones" data-en="Certifications">Certificaciones</h2>
+      <ul>
+        <li>Python for Data Science</li>
+        <li>Introduction to Python</li>
+        <li>Introduction to HTML & CSS</li>
+        <li>Generative AI for Executives</li>
+        <li>Excel Management (Intermediate & Advanced)</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+      <p>Email: nic8ag@yahoo.com</p>
+      <p>GitHub: <a href="https://github.com/nsochoaga">nsochoaga</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/nicholson-stive-ochoa-garcía-34473b79">Perfil</a></p>
+    </section>
+  </main>
+
+</body>
 </html>
